@@ -4,7 +4,7 @@
 <img src="images/flashChat_1.png" width="350" height="750">
 <img src="images/flashChat_2.png" width="350" height="750">
 <img src="images/flashChat_3.png" width="350" height="750">
-<img src="images/flashChat_4.png" width="350" height="750">
+<img src="images/flashChat_4.png" width="700" height="750">
 
 * Cocoapods
 * Swift Package Manager
