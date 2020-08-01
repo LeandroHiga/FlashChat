@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        //Configure Firesbase
+        FirebaseApp.configure()
+        
+        //Create Firestore
+        let db = Firestore.firestore()
+        print(db)
+        
+        //Enable IQKeyboardManager
+        IQKeyboardManager.shared.enable = true
+        //Disable Auto toolbar
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        //Dismiss keyboard when touch outside
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
         return true
     }
 
